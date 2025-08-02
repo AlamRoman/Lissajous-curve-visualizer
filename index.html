@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lissajous Figures</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="canvas_container">
+        <canvas id="canvas" style="width: 500px; height: 500px; border:1px solid #000; touch-action: none;"></canvas>
+    </div>
+
+    <div id="input_form">
+        <div>
+            <label for="omegaX">
+                <span class="text" style="display:flex; text-align:center; line-height:1;">
+                    <span style="display:block;">ω</span>
+                    <span style="display:block; font-size:0.6em; margin-top: 1em;">x</span>
+                    <span>&nbsp;=&nbsp;</span>
+                    <span id="displayOmegaX"></span>
+                  </span>
+            </label>
+            <input type="range" id="omegaX" min="0" max="9" value="2">
+        </div>
+        <div>
+            <label for="omegaY">
+                <span class="text" style="display:flex; text-align:center; line-height:1;">
+                    <span style="display:block;">ω</span>
+                    <span style="display:block; font-size:0.6em; margin-top: 1em;">y</span>
+                    <span>&nbsp;=&nbsp;</span>
+                    <span id="displayOmegaY"></span>
+                  </span>
+            </label>
+            <input type="range" id="omegaY" min="0" max="9" value="3">
+        </div>
+        <div>
+            <label for="theta" class="text" style="display:flex; text-align:center; line-height:1;">
+                <span>θ&nbsp;=&nbsp;</span>
+                <span id="displayTheta"></span>
+            </label>
+            <input type="range" id="theta" min="0" max="180" value="0">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

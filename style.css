@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+
+#canvas_container{
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+
+.text{
+    color: white;
+}
+
+#input_form{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
