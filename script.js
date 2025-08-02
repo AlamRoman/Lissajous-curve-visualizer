@@ -3,7 +3,7 @@ const WIDTH  = 500;
 const HEIGHT = 500;
 const ctx = canvas.getContext("2d");
 
-let a = 200, b = 200, omegaX = 1, omegaY = 2, theta = 10;
+let a = 200, b = 200, omegaX = 1, omegaY = 2, theta = 0;
 
 let inputOmegaX = document.getElementById("omegaX");
 let inputOmegaY = document.getElementById("omegaY");
@@ -22,18 +22,25 @@ displayThetavalue.innerText = theta;
 
 inputOmegaX.addEventListener("change", () => {
     omegaX = inputOmegaX.value;
-    displayOmegaXvalue.innerText = omegaX;
     cleanCanvas();
 });
 inputOmegaY.addEventListener("change", () => {
     omegaY = inputOmegaY.value;
-    displayOmegaYvalue.innerText = omegaY;
     cleanCanvas();
 });
 inputTheta.addEventListener("change", () =>{
     theta = inputTheta.value;
-    displayThetavalue.innerText = theta;
     cleanCanvas();
+});
+
+inputOmegaX.addEventListener("input", () => {
+    displayOmegaXvalue.innerText = inputOmegaX.value;
+});
+inputOmegaY.addEventListener("input", () => {
+    displayOmegaYvalue.innerText = inputOmegaY.value;
+});
+inputTheta.addEventListener("input", () =>{
+    displayThetavalue.innerText = inputTheta.value;
 });
 
 class Pointer {
@@ -98,12 +105,10 @@ function calculatePosition() {
 function cleanCanvas(){
     angle = 0;
     calculatePosition();
-    calculatePosition();
     ctx.clearRect(0,0,canvas.width,canvas.height);
 }
 
-// x = a * sin(a + theta)
-// y = b * sin(b)
+
 let angle = 0;
 let pointer = new Pointer(100,100);
 
