@@ -1,9 +1,9 @@
 const canvas = document.getElementById("canvas");
-const width  = 500;
-const height = 500;
+const WIDTH  = 500;
+const HEIGHT = 500;
 const ctx = canvas.getContext("2d");
 
-let a = 200, b = 200, omegaX = 2, omegaY = 7, theta = 10;
+let a = 200, b = 200, omegaX = 1, omegaY = 2, theta = 10;
 
 let inputOmegaX = document.getElementById("omegaX");
 let inputOmegaY = document.getElementById("omegaY");
@@ -71,8 +71,8 @@ function draw(){
     ctx.lineCap = "round";
     ctx.strokeStyle = "navy";
     ctx.beginPath();
-    ctx.moveTo(pointer.lastX + width/2, pointer.lastY + height/2);
-    ctx.lineTo(pointer.x + width/2, pointer.y + height/2);
+    ctx.moveTo(pointer.lastX + WIDTH/2, pointer.lastY + HEIGHT/2);
+    ctx.lineTo(pointer.x + WIDTH/2, pointer.y + HEIGHT/2);
     ctx.strokeStyle = pointer.color;
     ctx.stroke();
 }
@@ -89,7 +89,7 @@ function animate(){
 }
 
 function calculatePosition() {
-    let x = a * Math.sin(omegaX * angle + theta);
+    let x = a * Math.sin(omegaX * angle + degToRad(theta));
     let y = b * Math.sin(omegaY * angle);
 
     pointer.updatePosition(x,y);
