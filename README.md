@@ -34,11 +34,11 @@ The application uses the HTML5 `<canvas>` element to draw the curve and JavaScri
 
 ## Screenshots
 
-<img src="screenshots/img_1.png" alt="Screenshot 1" width="300">
-
-<img src="screenshots/img_2.png" alt="Screenshot 2" width="300">
-
-<img src="screenshots/img_3.png" alt="Screenshot 3" width="300">
+<p align="center">
+  <img src="screenshots/img_1.png" alt="Screenshot 1" width="300">
+  <img src="screenshots/img_2.png" alt="Screenshot 2" width="300">
+  <img src="screenshots/img_3.png" alt="Screenshot 3" width="300">
+</p>
 
 ![Lissajous curve visualizer](screenshots/gif_1.gif)
 
