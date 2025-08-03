@@ -34,11 +34,18 @@ The application uses the HTML5 `<canvas>` element to draw the curve and JavaScri
 
 ## Screenshots
 
-<p align="center">
+<figure>
   <img src="screenshots/img_1.png" alt="Screenshot 1" width="300">
+  <figcaption>Lissajous curve with ωₓ = 1, ωᵧ = 2, and phase shift θ = 0.</figcaption>
+</figure>
+<figure>
   <img src="screenshots/img_2.png" alt="Screenshot 2" width="300">
+  <figcaption>Lissajous curve with ωₓ = 1, ωᵧ = 1, and phase shift θ = 120.</figcaption>
+</figure>
+<figure>
   <img src="screenshots/img_3.png" alt="Screenshot 3" width="300">
-</p>
+  <figcaption>Lissajous curve with ωₓ = 2, ωᵧ = 3, and phase shift θ = 0.</figcaption>
+</figure>
 
 ![Lissajous curve visualizer](screenshots/gif_1.gif)
 
